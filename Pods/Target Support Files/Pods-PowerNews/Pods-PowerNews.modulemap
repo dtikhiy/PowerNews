@@ -1,0 +1,6 @@
+framework module Pods_PowerNews {
+  umbrella header "Pods-PowerNews-umbrella.h"
+
+  export *
+  module * { export * }
+}
