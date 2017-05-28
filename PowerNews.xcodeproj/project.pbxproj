@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		229CB8721EDB82170051C02C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 229CB8711EDB82170051C02C /* main.m */; };
 		229CB8751EDB82170051C02C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 229CB8741EDB82170051C02C /* AppDelegate.m */; };
-		229CB8781EDB82170051C02C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229CB8771EDB82170051C02C /* ViewController.m */; };
+		229CB8781EDB82170051C02C /* PWNMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229CB8771EDB82170051C02C /* PWNMainViewController.m */; };
 		229CB87B1EDB82170051C02C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229CB8791EDB82170051C02C /* Main.storyboard */; };
 		229CB87D1EDB82170051C02C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229CB87C1EDB82170051C02C /* Assets.xcassets */; };
 		229CB8801EDB82170051C02C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229CB87E1EDB82170051C02C /* LaunchScreen.storyboard */; };
@@ -31,8 +31,8 @@
 		229CB8711EDB82170051C02C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		229CB8731EDB82170051C02C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		229CB8741EDB82170051C02C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		229CB8761EDB82170051C02C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		229CB8771EDB82170051C02C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		229CB8761EDB82170051C02C /* PWNMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWNMainViewController.h; sourceTree = "<group>"; };
+		229CB8771EDB82170051C02C /* PWNMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWNMainViewController.m; sourceTree = "<group>"; };
 		229CB87A1EDB82170051C02C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		229CB87C1EDB82170051C02C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229CB87F1EDB82170051C02C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,14 +81,12 @@
 		229CB86F1EDB82170051C02C /* PowerNews */ = {
 			isa = PBXGroup;
 			children = (
-				229CB8731EDB82170051C02C /* AppDelegate.h */,
-				229CB8741EDB82170051C02C /* AppDelegate.m */,
-				229CB8761EDB82170051C02C /* ViewController.h */,
-				229CB8771EDB82170051C02C /* ViewController.m */,
-				229CB8791EDB82170051C02C /* Main.storyboard */,
-				229CB87C1EDB82170051C02C /* Assets.xcassets */,
-				229CB87E1EDB82170051C02C /* LaunchScreen.storyboard */,
-				229CB8811EDB82170051C02C /* Info.plist */,
+				229CB89D1EDB842C0051C02C /* ServiceLayer */,
+				229CB89C1EDB83AE0051C02C /* Views */,
+				229CB89B1EDB83A10051C02C /* Controllers */,
+				229CB89A1EDB83940051C02C /* Models */,
+				229CB8961EDB83000051C02C /* Resources */,
+				229CB8951EDB82F00051C02C /* Application */,
 				229CB8701EDB82170051C02C /* Supporting Files */,
 			);
 			path = PowerNews;
@@ -98,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				229CB8711EDB82170051C02C /* main.m */,
+				229CB8811EDB82170051C02C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,6 +108,87 @@
 				229CB88C1EDB82170051C02C /* Info.plist */,
 			);
 			path = PowerNewsTests;
+			sourceTree = "<group>";
+		};
+		229CB8951EDB82F00051C02C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				229CB8731EDB82170051C02C /* AppDelegate.h */,
+				229CB8741EDB82170051C02C /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		229CB8961EDB83000051C02C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				229CB8971EDB831A0051C02C /* Assets */,
+				229CB8981EDB832C0051C02C /* Storyboards */,
+				229CB8991EDB835B0051C02C /* XIBs */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		229CB8971EDB831A0051C02C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				229CB87C1EDB82170051C02C /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		229CB8981EDB832C0051C02C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				229CB8791EDB82170051C02C /* Main.storyboard */,
+				229CB87E1EDB82170051C02C /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		229CB8991EDB835B0051C02C /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		229CB89A1EDB83940051C02C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		229CB89B1EDB83A10051C02C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				229CB8761EDB82170051C02C /* PWNMainViewController.h */,
+				229CB8771EDB82170051C02C /* PWNMainViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		229CB89C1EDB83AE0051C02C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		229CB89D1EDB842C0051C02C /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				229CB89E1EDB84A70051C02C /* Network */,
+			);
+			name = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		229CB89E1EDB84A70051C02C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				229CB8781EDB82170051C02C /* ViewController.m in Sources */,
+				229CB8781EDB82170051C02C /* PWNMainViewController.m in Sources */,
 				229CB8751EDB82170051C02C /* AppDelegate.m in Sources */,
 				229CB8721EDB82170051C02C /* main.m in Sources */,
 			);

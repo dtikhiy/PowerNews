@@ -6,13 +6,13 @@
 //  Copyright © 2017 Dmytro Tykhyi. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PWNMainViewController.h"
 
-@interface ViewController ()
+@interface PWNMainViewController ()
 
 @end
 
-@implementation ViewController
+@implementation PWNMainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
