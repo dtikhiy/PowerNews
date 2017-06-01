@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SourceCell" id="gTV-IL-0wX" customClass="PWNSourceCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="201" height="195"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="201" height="195"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATEGORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JF-SF-jYt">
+                        <rect key="frame" x="127" y="8" width="66" height="15"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                        <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOURCE" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Q6a-TD-NCL">
+                        <rect key="frame" x="20" y="85.5" width="161" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="161" id="lCb-dI-oUT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Q6a-TD-NCL" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="55I-aw-VJo"/>
+                <constraint firstAttribute="trailing" secondItem="5JF-SF-jYt" secondAttribute="trailing" constant="8" id="sCw-tA-jvh"/>
+                <constraint firstItem="Q6a-TD-NCL" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="tGM-Li-5we"/>
+                <constraint firstItem="5JF-SF-jYt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="zUX-1H-1hi"/>
+            </constraints>
+            <size key="customSize" width="201" height="195"/>
+            <connections>
+                <outlet property="categoryLabel" destination="5JF-SF-jYt" id="lsE-lk-NV6"/>
+                <outlet property="nameLabel" destination="Q6a-TD-NCL" id="cr0-Wo-nG1"/>
+            </connections>
+            <point key="canvasLocation" x="109.5" y="126.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -14,6 +14,19 @@
 		229CB87D1EDB82170051C02C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229CB87C1EDB82170051C02C /* Assets.xcassets */; };
 		229CB8801EDB82170051C02C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229CB87E1EDB82170051C02C /* LaunchScreen.storyboard */; };
 		229CB88B1EDB82170051C02C /* PowerNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 229CB88A1EDB82170051C02C /* PowerNewsTests.m */; };
+		229CB8A41EDB97C20051C02C /* PWNSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 229CB8A31EDB97C20051C02C /* PWNSource.m */; };
+		229CB8A71EDBACE60051C02C /* PWNSourcesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229CB8A61EDBACE60051C02C /* PWNSourcesCollectionViewController.m */; };
+		229CB8AB1EDBAE630051C02C /* PWNSourceCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 229CB8A91EDBAE630051C02C /* PWNSourceCollectionViewCell.m */; };
+		229CB8AC1EDBAE630051C02C /* PWNSourceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229CB8AA1EDBAE630051C02C /* PWNSourceCollectionViewCell.xib */; };
+		229CB8B21EDC95B70051C02C /* PWNArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 229CB8B11EDC95B70051C02C /* PWNArticle.m */; };
+		229CB8B51EDCA73D0051C02C /* PWNArticlesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229CB8B41EDCA73D0051C02C /* PWNArticlesCollectionViewController.m */; };
+		229CB8C11EDCCA860051C02C /* PWNArticleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 229CB8BF1EDCCA860051C02C /* PWNArticleCollectionViewCell.m */; };
+		229CB8C21EDCCA860051C02C /* PWNArticleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229CB8C01EDCCA860051C02C /* PWNArticleCollectionViewCell.xib */; };
+		229CB8C61EDCE3390051C02C /* UIImageView+DownloadFromURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 229CB8C51EDCE3390051C02C /* UIImageView+DownloadFromURL.m */; };
+		229CB8C91EDD1CD80051C02C /* PWNAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 229CB8C81EDD1CD80051C02C /* PWNAPIClient.m */; };
+		22E1E8271EDD255700023212 /* PWNSourceServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1E8261EDD255700023212 /* PWNSourceServices.m */; };
+		22E1E82A1EDD2FF200023212 /* PWNArticleServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1E8291EDD2FF200023212 /* PWNArticleServices.m */; };
+		22E1E82E1EDDE63B00023212 /* PWNWebArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1E82D1EDDE63B00023212 /* PWNWebArticleViewController.m */; };
 		9A323E97B52EDC8583EFEEB2 /* Pods_PowerNewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058FAC09A11E86325AC95F6B /* Pods_PowerNewsTests.framework */; };
 		CA5CFB116BE1B318E2EBD62C /* Pods_PowerNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8615244D4A2C10A1B6E815 /* Pods_PowerNews.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +57,32 @@
 		229CB8861EDB82170051C02C /* PowerNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		229CB88A1EDB82170051C02C /* PowerNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PowerNewsTests.m; sourceTree = "<group>"; };
 		229CB88C1EDB82170051C02C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229CB89F1EDB95D40051C02C /* PWNConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWNConstants.h; sourceTree = "<group>"; };
+		229CB8A21EDB97C20051C02C /* PWNSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWNSource.h; sourceTree = "<group>"; };
+		229CB8A31EDB97C20051C02C /* PWNSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWNSource.m; sourceTree = "<group>"; };
+		229CB8A51EDBACE60051C02C /* PWNSourcesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWNSourcesCollectionViewController.h; sourceTree = "<group>"; };
+		229CB8A61EDBACE60051C02C /* PWNSourcesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWNSourcesCollectionViewController.m; sourceTree = "<group>"; };
+		229CB8A81EDBAE630051C02C /* PWNSourceCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWNSourceCollectionViewCell.h; sourceTree = "<group>"; };
+		229CB8A91EDBAE630051C02C /* PWNSourceCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWNSourceCollectionViewCell.m; sourceTree = "<group>"; };
+		229CB8AA1EDBAE630051C02C /* PWNSourceCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PWNSourceCollectionViewCell.xib; sourceTree = "<group>"; };
+		229CB8B01EDC95B70051C02C /* PWNArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWNArticle.h; sourceTree = "<group>"; };
+		229CB8B11EDC95B70051C02C /* PWNArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWNArticle.m; sourceTree = "<group>"; };
+		229CB8B31EDCA73D0051C02C /* PWNArticlesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWNArticlesCollectionViewController.h; sourceTree = "<group>"; };
+		229CB8B41EDCA73D0051C02C /* PWNArticlesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWNArticlesCollectionViewController.m; sourceTree = "<group>"; };
+		229CB8BE1EDCCA860051C02C /* PWNArticleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWNArticleCollectionViewCell.h; sourceTree = "<group>"; };
+		229CB8BF1EDCCA860051C02C /* PWNArticleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWNArticleCollectionViewCell.m; sourceTree = "<group>"; };
+		229CB8C01EDCCA860051C02C /* PWNArticleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PWNArticleCollectionViewCell.xib; sourceTree = "<group>"; };
+		229CB8C41EDCE3390051C02C /* UIImageView+DownloadFromURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DownloadFromURL.h"; sourceTree = "<group>"; };
+		229CB8C51EDCE3390051C02C /* UIImageView+DownloadFromURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DownloadFromURL.m"; sourceTree = "<group>"; };
+		229CB8C71EDD1CD80051C02C /* PWNAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWNAPIClient.h; sourceTree = "<group>"; };
+		229CB8C81EDD1CD80051C02C /* PWNAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWNAPIClient.m; sourceTree = "<group>"; };
+		22E1E8251EDD255700023212 /* PWNSourceServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWNSourceServices.h; sourceTree = "<group>"; };
+		22E1E8261EDD255700023212 /* PWNSourceServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWNSourceServices.m; sourceTree = "<group>"; };
+		22E1E8281EDD2FF200023212 /* PWNArticleServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWNArticleServices.h; sourceTree = "<group>"; };
+		22E1E8291EDD2FF200023212 /* PWNArticleServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWNArticleServices.m; sourceTree = "<group>"; };
+		22E1E82B1EDDE49100023212 /* PWNNewsServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWNNewsServiceProtocol.h; sourceTree = "<group>"; };
+		22E1E82C1EDDE63B00023212 /* PWNWebArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWNWebArticleViewController.h; sourceTree = "<group>"; };
+		22E1E82D1EDDE63B00023212 /* PWNWebArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWNWebArticleViewController.m; sourceTree = "<group>"; };
 		6F880669606E2C694CD43E57 /* Pods-PowerNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-PowerNews/Pods-PowerNews.release.xcconfig"; sourceTree = "<group>"; };
 		8B815C75CA5C5EFE09139A5F /* Pods-PowerNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PowerNews/Pods-PowerNews.debug.xcconfig"; sourceTree = "<group>"; };
 		90D23BDED92D18D0A97D7D3C /* Pods-PowerNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerNewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PowerNewsTests/Pods-PowerNewsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,13 +132,13 @@
 		229CB86F1EDB82170051C02C /* PowerNews */ = {
 			isa = PBXGroup;
 			children = (
+				229CB8951EDB82F00051C02C /* Application */,
+				229CB8701EDB82170051C02C /* Supporting Files */,
 				229CB89D1EDB842C0051C02C /* ServiceLayer */,
 				229CB89C1EDB83AE0051C02C /* Views */,
 				229CB89B1EDB83A10051C02C /* Controllers */,
 				229CB89A1EDB83940051C02C /* Models */,
 				229CB8961EDB83000051C02C /* Resources */,
-				229CB8951EDB82F00051C02C /* Application */,
-				229CB8701EDB82170051C02C /* Supporting Files */,
 			);
 			path = PowerNews;
 			sourceTree = "<group>";
@@ -107,6 +146,7 @@
 		229CB8701EDB82170051C02C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				229CB89F1EDB95D40051C02C /* PWNConstants.h */,
 				229CB8711EDB82170051C02C /* main.m */,
 				229CB8811EDB82170051C02C /* Info.plist */,
 			);
@@ -161,6 +201,8 @@
 		229CB8991EDB835B0051C02C /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				229CB8AA1EDBAE630051C02C /* PWNSourceCollectionViewCell.xib */,
+				229CB8C01EDCCA860051C02C /* PWNArticleCollectionViewCell.xib */,
 			);
 			name = XIBs;
 			sourceTree = "<group>";
@@ -168,6 +210,10 @@
 		229CB89A1EDB83940051C02C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				229CB8A21EDB97C20051C02C /* PWNSource.h */,
+				229CB8A31EDB97C20051C02C /* PWNSource.m */,
+				229CB8B01EDC95B70051C02C /* PWNArticle.h */,
+				229CB8B11EDC95B70051C02C /* PWNArticle.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -177,6 +223,12 @@
 			children = (
 				229CB8761EDB82170051C02C /* PWNMainViewController.h */,
 				229CB8771EDB82170051C02C /* PWNMainViewController.m */,
+				229CB8A51EDBACE60051C02C /* PWNSourcesCollectionViewController.h */,
+				229CB8A61EDBACE60051C02C /* PWNSourcesCollectionViewController.m */,
+				229CB8B31EDCA73D0051C02C /* PWNArticlesCollectionViewController.h */,
+				229CB8B41EDCA73D0051C02C /* PWNArticlesCollectionViewController.m */,
+				22E1E82C1EDDE63B00023212 /* PWNWebArticleViewController.h */,
+				22E1E82D1EDDE63B00023212 /* PWNWebArticleViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +236,8 @@
 		229CB89C1EDB83AE0051C02C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				229CB8C31EDCE3060051C02C /* Categories */,
+				229CB8AD1EDBAE660051C02C /* Cells */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -192,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				229CB89E1EDB84A70051C02C /* Network */,
+				229CB8CA1EDD1F7E0051C02C /* Services */,
 			);
 			name = ServiceLayer;
 			sourceTree = "<group>";
@@ -199,8 +254,42 @@
 		229CB89E1EDB84A70051C02C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				229CB8C71EDD1CD80051C02C /* PWNAPIClient.h */,
+				229CB8C81EDD1CD80051C02C /* PWNAPIClient.m */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		229CB8AD1EDBAE660051C02C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				229CB8A81EDBAE630051C02C /* PWNSourceCollectionViewCell.h */,
+				229CB8A91EDBAE630051C02C /* PWNSourceCollectionViewCell.m */,
+				229CB8BE1EDCCA860051C02C /* PWNArticleCollectionViewCell.h */,
+				229CB8BF1EDCCA860051C02C /* PWNArticleCollectionViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		229CB8C31EDCE3060051C02C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				229CB8C41EDCE3390051C02C /* UIImageView+DownloadFromURL.h */,
+				229CB8C51EDCE3390051C02C /* UIImageView+DownloadFromURL.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		229CB8CA1EDD1F7E0051C02C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				22E1E82B1EDDE49100023212 /* PWNNewsServiceProtocol.h */,
+				22E1E8251EDD255700023212 /* PWNSourceServices.h */,
+				22E1E8261EDD255700023212 /* PWNSourceServices.m */,
+				22E1E8281EDD2FF200023212 /* PWNArticleServices.h */,
+				22E1E8291EDD2FF200023212 /* PWNArticleServices.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		2EF2386ACB439E71D132174A /* Frameworks */ = {
@@ -313,9 +402,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229CB8AC1EDBAE630051C02C /* PWNSourceCollectionViewCell.xib in Resources */,
 				229CB8801EDB82170051C02C /* LaunchScreen.storyboard in Resources */,
 				229CB87D1EDB82170051C02C /* Assets.xcassets in Resources */,
 				229CB87B1EDB82170051C02C /* Main.storyboard in Resources */,
+				229CB8C21EDCCA860051C02C /* PWNArticleCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,9 +517,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E1E8271EDD255700023212 /* PWNSourceServices.m in Sources */,
+				229CB8A41EDB97C20051C02C /* PWNSource.m in Sources */,
+				22E1E82E1EDDE63B00023212 /* PWNWebArticleViewController.m in Sources */,
+				22E1E82A1EDD2FF200023212 /* PWNArticleServices.m in Sources */,
 				229CB8781EDB82170051C02C /* PWNMainViewController.m in Sources */,
 				229CB8751EDB82170051C02C /* AppDelegate.m in Sources */,
+				229CB8AB1EDBAE630051C02C /* PWNSourceCollectionViewCell.m in Sources */,
+				229CB8C91EDD1CD80051C02C /* PWNAPIClient.m in Sources */,
+				229CB8A71EDBACE60051C02C /* PWNSourcesCollectionViewController.m in Sources */,
+				229CB8C11EDCCA860051C02C /* PWNArticleCollectionViewCell.m in Sources */,
 				229CB8721EDB82170051C02C /* main.m in Sources */,
+				229CB8B21EDC95B70051C02C /* PWNArticle.m in Sources */,
+				229CB8B51EDCA73D0051C02C /* PWNArticlesCollectionViewController.m in Sources */,
+				229CB8C61EDCE3390051C02C /* UIImageView+DownloadFromURL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +735,7 @@
 				229CB8911EDB82170051C02C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		229CB8921EDB82170051C02C /* Build configuration list for PBXNativeTarget "PowerNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -641,6 +744,7 @@
 				229CB8941EDB82170051C02C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

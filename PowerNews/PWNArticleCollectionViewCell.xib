@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArticleCell" id="L2K-xo-8sx" customClass="PWNArticleCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="338"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="338"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hhg-x7-ENM" userLabel="Content">
+                        <rect key="frame" x="0.0" y="0.0" width="387" height="338"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newspaper" translatesAutoresizingMaskIntoConstraints="NO" id="ff7-gO-hhE">
+                                <rect key="frame" x="0.0" y="0.0" width="387" height="198"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="Jfd-KR-eNm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUTHOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Je-zC-CQc">
+                                <rect key="frame" x="306" y="8" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmW-JI-fA2">
+                                <rect key="frame" x="8" y="235" width="371" height="95"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <string key="text">Company is a leading technology media property, dedicated to obsessively profiling startups, reviewing new Internet products, and breaking tech news.</string>
+                                <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvi-QQ-ALB">
+                                <rect key="frame" x="8" y="206" width="371" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="371" id="LJ1-Du-3aI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Je-zC-CQc" firstAttribute="top" secondItem="Hhg-x7-ENM" secondAttribute="top" constant="8" id="0aD-uK-NHR"/>
+                            <constraint firstItem="pmW-JI-fA2" firstAttribute="top" secondItem="Gvi-QQ-ALB" secondAttribute="bottom" constant="8" id="65f-v7-VDQ"/>
+                            <constraint firstItem="ff7-gO-hhE" firstAttribute="leading" secondItem="Hhg-x7-ENM" secondAttribute="leading" id="HKG-U1-lYz"/>
+                            <constraint firstItem="Gvi-QQ-ALB" firstAttribute="centerX" secondItem="ff7-gO-hhE" secondAttribute="centerX" id="Kg8-Pe-tQi"/>
+                            <constraint firstAttribute="trailing" secondItem="pmW-JI-fA2" secondAttribute="trailing" constant="8" id="Q9d-Ur-bwN"/>
+                            <constraint firstAttribute="bottom" secondItem="pmW-JI-fA2" secondAttribute="bottom" constant="8" id="Tfh-iF-uNZ"/>
+                            <constraint firstItem="pmW-JI-fA2" firstAttribute="leading" secondItem="Hhg-x7-ENM" secondAttribute="leading" constant="8" id="VLH-Fy-gnZ"/>
+                            <constraint firstItem="pmW-JI-fA2" firstAttribute="centerX" secondItem="Gvi-QQ-ALB" secondAttribute="centerX" id="VvU-iP-39i"/>
+                            <constraint firstItem="ff7-gO-hhE" firstAttribute="top" secondItem="Hhg-x7-ENM" secondAttribute="top" id="YPS-Aq-sIP"/>
+                            <constraint firstItem="ff7-gO-hhE" firstAttribute="width" secondItem="Hhg-x7-ENM" secondAttribute="width" id="iim-xO-buY"/>
+                            <constraint firstItem="Gvi-QQ-ALB" firstAttribute="top" secondItem="ff7-gO-hhE" secondAttribute="bottom" constant="8" id="y6J-l8-YSE"/>
+                            <constraint firstAttribute="trailing" secondItem="8Je-zC-CQc" secondAttribute="trailing" constant="8" id="yPZ-fA-wKo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Hhg-x7-ENM" firstAttribute="height" secondItem="L2K-xo-8sx" secondAttribute="height" id="Gf2-7x-9yt"/>
+                <constraint firstItem="Hhg-x7-ENM" firstAttribute="centerY" secondItem="L2K-xo-8sx" secondAttribute="centerY" id="IHu-Vd-fIw"/>
+                <constraint firstItem="Hhg-x7-ENM" firstAttribute="centerX" secondItem="L2K-xo-8sx" secondAttribute="centerX" id="g68-e8-1aR"/>
+                <constraint firstItem="Hhg-x7-ENM" firstAttribute="width" secondItem="L2K-xo-8sx" secondAttribute="width" id="jII-l2-qwQ"/>
+            </constraints>
+            <size key="customSize" width="387" height="338"/>
+            <connections>
+                <outlet property="articleAuthor" destination="8Je-zC-CQc" id="Bgr-uR-ydL"/>
+                <outlet property="articleDescription" destination="pmW-JI-fA2" id="os9-dR-9Om"/>
+                <outlet property="articleImage" destination="ff7-gO-hhE" id="9iT-ai-eKT"/>
+                <outlet property="articleTitle" destination="Gvi-QQ-ALB" id="FDr-8a-4qD"/>
+            </connections>
+            <point key="canvasLocation" x="202.5" y="198"/>
+        </collectionViewCell>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+    <resources>
+        <image name="newspaper" width="960" height="540"/>
+    </resources>
+</document>
