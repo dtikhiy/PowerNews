@@ -18,11 +18,17 @@
 
 - (void)updateWithArticle:(PWNArticle *)article {
     if (article) {
+        [self cleanUpCellContent];
+        
         self.articleAuthor.text = [article.author uppercaseString];
         self.articleTitle.text = [article.title uppercaseString];
         self.articleDescription.text = article.descriptionArticle;
         [self.articleImage downloadImageFromURL:article.urlToImage];
     }
+}
+
+- (void)cleanUpCellContent {
+    self.articleImage.image = [UIImage imageNamed:@"newspaper"];
 }
 
 @end
